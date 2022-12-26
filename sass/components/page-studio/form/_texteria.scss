@@ -1,0 +1,40 @@
+.texteria__container {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 10px;
+
+  text-align: left;
+  font-size: 12px;
+  line-height: 1.17;
+  letter-spacing: 1;
+
+  color: $color-text-secondary;
+}
+
+.texteria__label {
+  margin-bottom: 4px;
+}
+
+.texteria__field {
+  padding: 12px 16px;
+  height: 120px;
+  margin-bottom: 20px;
+
+  resize: none;
+
+  border: 1px solid $color-form-modal-border;
+  border-radius: 4px;
+
+  transform: border-color 250ms $transition-timing-function-all-hover-focus;
+
+  &:hover,
+  &:focus {
+    outline: none;
+    border-color: $color-accent;
+  }
+}
+
+.texteria__field--placeholder::placeholder {
+  color: $color-form-modal-color-text;
+}

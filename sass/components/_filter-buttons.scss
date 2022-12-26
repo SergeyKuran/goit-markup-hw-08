@@ -1,0 +1,44 @@
+.filter-buttons {
+  @include flex;
+  flex-direction: column;
+}
+
+.filter-buttons__title {
+  @extend %visibility-hidden;
+}
+
+.filter-buttons__item {
+  @include flex;
+
+  margin-bottom: 34px;
+}
+
+.filter-buttons__items {
+  margin-left: 8px;
+}
+
+.filter-buttons__button {
+  padding: 6px 22px;
+
+  font-family: inherit;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  letter-spacing: 0.03em;
+
+  border-radius: 4px;
+  border-width: 0;
+
+  background-color: $color-section;
+
+  cursor: pointer;
+
+  transition: box-shadow 250ms $transition-timing-function-all-hover-focus,
+    color 250ms $transition-timing-function-all-hover-focus,
+    backgroud-color 250ms $transition-timing-function-all-hover-focus;
+
+  .filter-buttons__items:hover &,
+  .filter-buttons__items:focus & {
+    @include buttons-hover-focus;
+  }
+}

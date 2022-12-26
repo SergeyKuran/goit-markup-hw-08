@@ -1,0 +1,22 @@
+.page-footer {
+  background-color: $color-backgroud-footer;
+}
+
+.container--flex {
+  @include flex;
+  justify-content: space-between;
+  align-items: baseline;
+
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.logo__page-footer--margin-bottom {
+  display: inline-block;
+
+  margin-bottom: 20px;
+}
+
+.address__box {
+  margin-right: 70px;
+}

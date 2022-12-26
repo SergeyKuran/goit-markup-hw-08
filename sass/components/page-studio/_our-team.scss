@@ -1,0 +1,18 @@
+.section--bgrcolor {
+  background-color: $color-section;
+}
+
+.section--padding-bottom {
+  padding-bottom: 0;
+}
+
+.card-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+
+  letter-spacing: 0.03em;
+}

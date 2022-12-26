@@ -1,0 +1,30 @@
+.clients__items {
+  @include flex;
+  gap: 30px;
+}
+
+.clients__link {
+  @include flex;
+
+  width: 170px;
+  height: 92px;
+  color: $color-social-link;
+  border: 1px solid $color-social-link;
+  border-radius: 10px;
+
+  transition: border-color 250ms $transition-timing-function-all-hover-focus,
+    fill 250ms $transition-timing-function-all-hover-focus;
+  &:hover,
+  &:focus {
+    border-color: $color-accent;
+  }
+}
+
+.clients__icon {
+  fill: currentColor;
+
+  .clients__link:hover &,
+  .clients__link:focus & {
+    fill: $color-accent;
+  }
+}

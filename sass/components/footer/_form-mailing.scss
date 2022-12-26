@@ -1,0 +1,76 @@
+.form-mailing {
+  display: flex;
+  align-items: end;
+}
+
+.form-mailing__container {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-mailing__title {
+  display: inline-block;
+  margin-bottom: 20px;
+
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 1.14;
+  text-transform: uppercase;
+
+  color: $color-backgroud-header;
+}
+
+.form-mailing__input {
+  width: 358px;
+  height: 50px;
+  padding: 16px 15px;
+  margin-right: 12px;
+
+  color: $color-backgroud-header;
+  background-color: $color-backgroud-footer;
+
+  border-color: $color-border-form-email;
+  border-radius: 4px;
+
+  outline: none;
+
+  transition: border-color 250ms $transition-timing-function-all-hover-focus;
+
+  &:hover,
+  &:focus {
+    border-color: $color-accent;
+  }
+}
+
+.form-mailing__button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  padding: 10px 28px;
+
+  min-width: 200px;
+  height: 50px;
+
+  font-weight: 700;
+  line-height: 1.88;
+
+  color: $color-backgroud-header;
+  background-color: $color-accent;
+
+  border: none;
+  border-radius: 4px;
+
+  transition: box-shadow 250ms $transition-timing-function-all-hover-focus;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0 4px $color-box-shadow-form-button;
+  }
+}
+
+.form-mailing__icon {
+  margin-left: 10px;
+
+  fill: currentColor;
+}
