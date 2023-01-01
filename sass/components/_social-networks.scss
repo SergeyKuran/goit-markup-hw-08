@@ -1,16 +1,15 @@
 .social-networks {
-  @include flex;
+  display: flex;
+  justify-content: center;
   gap: 10px;
+}
 
-  margin-right: 32px;
-  margin-bottom: 30px;
-  margin-left: 32px;
+.social-networks li {
+  margin-bottom: 24px;
 }
 
 .social-networks__link {
-  @include flex;
-  width: 44px;
-  height: 44px;
+  padding: 12px;
 
   color: $color-social-link;
 
@@ -27,9 +26,7 @@
 }
 
 .social-networks__icon {
-  @include flex;
   width: 20px;
   height: 20px;
-
   fill: currentColor;
 }

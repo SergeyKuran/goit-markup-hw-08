@@ -2,25 +2,34 @@
 @import "./base/basic-parameters";
 @import "./utils/placeholders";
 @import "./utils/mixins";
+
 @import "./components/header/page-header";
 @import "./components/logo";
+@import "./components/page-studio/mobile-menu/mobile-menu";
 @import "./components/header/nav-header";
 @import "./components/header/contact";
+
 @import "./components/page-studio/hero";
 @import "./components/page-studio/advantages";
 @import "./components/page-studio/specifics";
 @import "./components/page-studio/our-team";
+
 @import "./components/card-team";
 @import "./components/social-networks";
+
 @import "./components/page-studio/clients";
 @import "./components/clients-items";
+
 @import "./components/footer/page-footer";
 @import "./components/footer/address";
 @import "./components/footer/form-join";
 @import "./components/footer/form-mailing";
 @import "./components/filter-buttons";
+
 @import "./components/page-portfolio/portfolio";
+
 @import "./components/backdrop";
+
 @import "./components/page-studio/form/form";
 @import "./components/page-studio/form/texteria";
 @import "./components/page-studio/form/checkbox";

@@ -1,0 +1,105 @@
+.menu-container {
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    & .mobile-toggle__icon-close {
+      display: none;
+    }
+
+    &.is-open .menu-toggle__icon-close {
+      display: block;
+    }
+
+    &.is-open .menu-toggle__icon-menu {
+      display: none;
+    }
+  }
+}
+
+.menu-toggle {
+  @include flex;
+  min-height: 40px;
+  min-width: 40px;
+
+  margin: 0;
+  padding: 0;
+
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  cursor: pointer;
+
+  transition: fill 250ms $transition-timing-function-all-hover-focus;
+
+  & svg:hover,
+  & svg:focus {
+    fill: $color-accent;
+  }
+}
+
+.mobile-menu {
+  font-size: 40px;
+  font-weight: 500;
+  line-height: 1.17;
+
+  background-color: $color-text-button-hero;
+  pointer-events: none;
+
+  transition: transform 250ms $transition-timing-function-all-hover-focus,
+    color 250ms $transition-timing-function-all-hover-focus,
+    visibility 250ms $transition-timing-function-all-hover-focus;
+
+  & li:hover,
+  & li:focus {
+    color: $color-accent;
+  }
+
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    min-height: 796px;
+
+    padding: 48px 40px;
+
+    .menu-container.is-open & {
+      transform: translateX(0);
+      visibility: visible;
+    }
+
+    .menu-container & {
+      transform: translateX(100%);
+      visibility: hidden;
+    }
+  }
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    .menu-container & {
+      transform: translateX(100%);
+      visibility: hidden;
+    }
+  }
+}
+
+.mobile-menu__contacts {
+  & [href="mailto:info@devstudio.com"] {
+    color: $color-text-secondary;
+  }
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    font-size: 34px;
+  }
+}
+
+.mobile-menu__socials {
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    @include flex;
+
+    font-size: 18px;
+    line-height: 1.22;
+    & > li {
+      border-right: 1px solid $color-border-bottom-header-title;
+    }
+  }
+}

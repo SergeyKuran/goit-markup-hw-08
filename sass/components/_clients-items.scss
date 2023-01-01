@@ -1,19 +1,28 @@
 .clients__items {
-  @include flex;
-  gap: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+}
+
+.clients__items li {
+  margin: 15px;
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    width: calc((100% - 4 * 15px) / 2);
+  }
 }
 
 .clients__link {
   @include flex;
 
-  width: 170px;
-  height: 92px;
+  min-height: 92px;
+
   color: $color-social-link;
   border: 1px solid $color-social-link;
   border-radius: 10px;
 
   transition: border-color 250ms $transition-timing-function-all-hover-focus,
     fill 250ms $transition-timing-function-all-hover-focus;
+
   &:hover,
   &:focus {
     border-color: $color-accent;

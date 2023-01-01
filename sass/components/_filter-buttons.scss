@@ -1,14 +1,14 @@
 .filter-buttons {
-  @include flex;
-  flex-direction: column;
+  // @include flex;
+  // flex-direction: column;
 }
 
 .filter-buttons__title {
-  @extend %visibility-hidden;
+  @extend %visually-hidden;
 }
 
 .filter-buttons__item {
-  @include flex;
+  // @include flex;
 
   margin-bottom: 34px;
 }

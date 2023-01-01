@@ -1,12 +1,44 @@
-@mixin flex($display: flex, $justify-content: center, $align-items: center){
-display: $display;
-justify-content: $justify-content;
-align-items: $align-items;
+@mixin flex($display: flex, $justify-content: center, $align-items: center) {
+  display: $display;
+  justify-content: $justify-content;
+  align-items: $align-items;
 }
 
-@mixin buttons-hover-focus(){
-    color: $color-text-hero;
-    background-color: $color-accent;
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
-      0px 2px 2px rgba(0, 0, 0, 0.12);
-  }
+@mixin buttons-hover-focus() {
+  color: $color-text-hero;
+  background-color: $color-accent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
+@mixin mobileMin320($min-width: $mobile-width320) {
+  min-width: $min-width;
+}
+
+@mixin mobileMin480($min-width: $mobile-width480) {
+  min-width: $min-width;
+}
+
+@mixin tabletMin768($min-width: $mobile-width768) {
+  min-width: $min-width;
+}
+
+@mixin desktopMin1200($min-width: $mobile-width1200) {
+  min-width: $min-width;
+}
+
+@mixin mobileMax320($max-width: $mobile-width320) {
+  max-width: $max-width;
+}
+
+@mixin mobileMax480($max-width: $mobile-width480) {
+  max-width: $mobile-width480;
+}
+
+@mixin tabletMax768($max-width: $mobile-width768) {
+  max-width: $max-width;
+}
+
+@mixin desktopMax1200($max-width: $mobile-width1200) {
+  max-width: $max-width;
+}

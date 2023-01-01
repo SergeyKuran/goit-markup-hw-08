@@ -1,13 +1,19 @@
-.hero {
-  @include flex;
-
-  max-width: 1600px;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  margin-left: auto;
-  margin-right: auto;
+.hero__container {
+  margin: 0 auto;
 
   text-align: center;
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    max-width: 320px;
+  }
+}
+
+.hero {
+  max-width: 1600px;
+
+  padding-top: 118px;
+  padding-bottom: 118px;
+  margin: 0 auto;
+
   text-transform: uppercase;
 
   background-color: $color-backgroud-hero;
@@ -19,25 +25,26 @@
     url("../images/hero/img-hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
+
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    max-width: 480px;
+  }
 }
 
 .hero__title {
   margin-bottom: 30px;
 
-  max-width: 696px;
-
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
+  font-size: 26px;
+  line-height: 1.6;
   letter-spacing: 0.06em;
 
   color: $color-text-hero;
 }
 
 .hero__button {
-  padding: 10px 32px;
-
-  min-width: 216px;
+  padding: 10px 24px;
 
   font-weight: 700;
   font-size: 16px;

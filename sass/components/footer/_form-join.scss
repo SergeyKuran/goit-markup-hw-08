@@ -1,8 +1,5 @@
 .form-join {
-  display: flex;
-  flex-direction: column;
-
-  margin-right: 93px;
+  margin-bottom: 60px;
 }
 
 .form-join__text {
@@ -15,33 +12,32 @@
 }
 
 .form-join__item {
-  display: flex;
+  @include flex;
   gap: 10px;
 }
 
 .form-join__link {
   @include flex;
 
-  width: 44px;
-  height: 44px;
+  padding: 12px;
   color: $color-social-link;
   border-radius: 50%;
   background-color: $color-background-socials-footer;
 
-  transform: background-color 250ms $transition-timing-function-all-hover-focus;
+  // transform: background-color 250ms $transition-timing-function-all-hover-focus;
 
-  &:hover,
-  &:focus {
-    background-color: $color-accent;
-  }
+  // &:hover,
+  // &:focus {
+  //   background-color: $color-accent;
+  // }
 }
 
 .form-join__icon {
   fill: currentColor;
   transform: fill 250ms $transition-timing-function-all-hover-focus;
 
-  .form-join__link:hover &,
-  .form-join__link:focus & {
-    fill: $color-text-hero;
-  }
+  // .form-join__link:hover &,
+  // .form-join__link:focus & {
+  //   fill: $color-text-hero;
+  // }
 }

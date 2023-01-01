@@ -1,5 +1,5 @@
 .checkbox__label {
-  @include flex;
+  // @include flex;
 
   margin-bottom: 20px;
 
@@ -12,10 +12,10 @@
 }
 
 .checkbox__field {
-  position: absolute;
+  // position: absolute;
 
-  width: 16px;
-  height: 15px;
+  // width: 16px;
+  // height: 15px;
 
   appearance: none;
 

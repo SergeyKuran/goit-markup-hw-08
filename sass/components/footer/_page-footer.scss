@@ -1,14 +1,9 @@
 .page-footer {
+  padding: 60px 0;
+
+  text-align: center;
+
   background-color: $color-backgroud-footer;
-}
-
-.container--flex {
-  @include flex;
-  justify-content: space-between;
-  align-items: baseline;
-
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .logo__page-footer--margin-bottom {
@@ -18,5 +13,5 @@
 }
 
 .address__box {
-  margin-right: 70px;
+  //   margin-right: 70px;
 }
