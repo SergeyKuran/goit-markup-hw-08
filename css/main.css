@@ -176,7 +176,6 @@ button {
 }
 @media screen and (max-width: 767px) {
   .mobile-menu {
-    display: none;
     position: absolute;
     top: 0;
     left: 0;
