@@ -2,11 +2,13 @@
   border-bottom: 1px solid $color-border-bottom-header-title;
 }
 
-.page-header__box {
+.container--position {
   position: relative;
+}
+
+.page-header__box {
   @media screen and (max-width: ($tablet-width768 - 1px)) {
     @include flex;
-    position: relative;
     justify-content: space-between;
     min-height: 60px;
   }

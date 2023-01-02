@@ -10,14 +10,13 @@ h3,
 h4,
 h5,
 h6,
-p {
+p,
+ul {
   margin: 0;
   padding: 0;
 }
 
 ul {
-  padding-left: 0;
-  margin: 0;
   list-style: none;
 }
 
@@ -82,9 +81,10 @@ button {
   border-bottom: 1px solid #ececec;
 }
 
-.page-header__box {
+.container--position {
   position: relative;
 }
+
 @media screen and (max-width: 767px) {
   .page-header__box {
     display: -webkit-box;
@@ -96,7 +96,6 @@ button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    position: relative;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
@@ -140,6 +139,8 @@ button {
 }
 
 .menu-toggle {
+  position: relative;
+  z-index: 2;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -155,18 +156,25 @@ button {
 }
 
 .mobile-menu {
-  position: fixed;
+  position: absolute;
+  z-index: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   top: 0;
   left: 0;
-  width: 100vh;
-  height: 100vw;
-  min-height: 796px;
+  width: 100%;
+  height: 100vh;
   padding: 48px 40px;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
   background-color: #ffffff;
-  pointer-events: initial;
+  overflow-y: scroll;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -181,9 +189,20 @@ button {
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
   visibility: hidden;
+  max-height: 796px;
 }
 .mobile-menu li:hover, .mobile-menu li:focus {
   color: #2196f3;
+}
+.mobile-menu .current {
+  color: #2196f3;
+}
+@media screen and (max-width: 319px) {
+  .mobile-menu,
+.mobile-menu .mobile-menu__contacts a,
+.mobile-menu .mobile-menu__socials {
+    font-size: 20px;
+  }
 }
 
 .mobile-menu__list {
@@ -196,6 +215,7 @@ button {
 .mobile-menu__contacts {
   margin-bottom: 64px;
   font-size: 34px;
+  color: #2196f3;
 }
 .mobile-menu__contacts li {
   margin-bottom: 32px;
@@ -209,14 +229,17 @@ button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   font-size: 18px;
   line-height: 1.22;
+  color: #2196f3;
 }
 .mobile-menu__socials > li:not(:first-child) {
   padding-left: 10px;
@@ -326,6 +349,11 @@ button {
   line-height: 1.6;
   letter-spacing: 0.06em;
   color: #ffffff;
+}
+@media screen and (max-width: 319px) {
+  .hero__title {
+    font-size: 90%;
+  }
 }
 
 .hero__button {
