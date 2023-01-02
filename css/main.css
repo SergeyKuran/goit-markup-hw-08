@@ -131,26 +131,15 @@ button {
   .menu-container .mobile-toggle__icon-close {
     display: none;
   }
-  .menu-container.is-open .menu-toggle__icon-close {
+  .menu-container.is-open .mobile-toggle__icon-close {
     display: block;
   }
-  .menu-container.is-open .menu-toggle__icon-menu {
+  .menu-container.is-open .mobile-toggle__icon-menu {
     display: none;
   }
 }
 
 .menu-toggle {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  min-height: 40px;
-  min-width: 40px;
   margin: 0;
   padding: 0;
   background-color: transparent;
@@ -166,16 +155,18 @@ button {
 }
 
 .mobile-menu {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100vh;
+  height: 100vw;
   min-height: 796px;
+  padding: 48px 40px;
   font-size: 40px;
   font-weight: 500;
   line-height: 1.17;
   background-color: #ffffff;
-  pointer-events: none;
+  pointer-events: initial;
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -196,7 +187,7 @@ button {
 }
 
 .mobile-menu__list {
-  margin-bottom: 302px;
+  margin-bottom: auto;
 }
 .mobile-menu__list li {
   margin-bottom: 32px;
