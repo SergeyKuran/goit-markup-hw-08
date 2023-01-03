@@ -1,9 +1,11 @@
 .page-header {
   border-bottom: 1px solid $color-border-bottom-header-title;
-}
 
-.container--position {
-  position: relative;
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
+    position: relative;
+    margin: 0 auto;
+    max-width: 480px;
+  }
 }
 
 .page-header__box {

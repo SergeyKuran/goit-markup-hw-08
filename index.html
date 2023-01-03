@@ -21,12 +21,14 @@
     <link rel="stylesheet" href="./css/main.min.css" />
   </head>
   <body>
-    <header class="page-header">
-      <div class="container container--position">
-        <div class="page-header__box">
-          <!-- Лого -->
-          <a href="/" class="logo">Web<span class="logo__text">Studio</span></a>
-          <div class="menu-container js-menu-container" id="mobile-menu">
+    <header>
+      <div class="page-header">
+        <div class="container">
+          <div class="page-header__box">
+            <!-- Лого -->
+            <a href="/" class="logo"
+              >Web<span class="logo__text">Studio</span></a
+            >
             <button
               class="menu-toggle js-open-menu"
               aria-expanded="false"
@@ -35,16 +37,20 @@
               <svg width="40" height="40" aria-label="Перемикач меню">
                 <use
                   href="./images/icons.svg#icon-menu"
-                  class="mobile-toggle__icon-menu"
-                ></use>
-                <use
-                  href="./images/icons.svg#icon-close"
-                  class="mobile-toggle__icon-close"
+                  class="menu-toggle__icon-menu"
                 ></use>
               </svg>
             </button>
-            <div class="mobile-menu">
-              <ul class="mobile-menu__list">
+            <div class="menu-container js-menu-container" id="mobile-menu">
+              <button class="menu-toggle js-close-menu">
+                <svg width="40" height="40">
+                  <use
+                    href="./images/icons.svg#icon-close"
+                    class="menu-toggle__icon-close"
+                  ></use>
+                </svg>
+              </button>
+              <ul class="mobile-menu">
                 <li>Студія</li>
                 <li>Портфоліо</li>
                 <li>Контакти</li>
@@ -61,7 +67,6 @@
                   </a>
                 </li>
               </ul>
-
               <ul class="mobile-menu__socials">
                 <li>Instagram</li>
                 <li>Twitter</li>
@@ -70,44 +75,46 @@
               </ul>
             </div>
           </div>
-        </div>
-        <!-- Навігація Хедер -->
-        <nav class="nav-header">
-          <ul class="nav-header__items">
+          <!-- Навігація Хедер -->
+          <nav class="nav-header">
+            <ul class="nav-header__items">
+              <li>
+                <a
+                  href="./index.html"
+                  class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
+                  >Студія</a
+                >
+              </li>
+              <li>
+                <a href="./portfolio.html" class="nav-header__link"
+                  >Портфоліо</a
+                >
+              </li>
+              <li>
+                <a href="" class="nav-header__link">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <!-- Контактні дані Хедер -->
+          <ul class="contact">
             <li>
-              <a
-                href="./index.html"
-                class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
-                >Студія</a
+              <a href="emailto:info@devstudio.com" class="contact__link">
+                <svg class="contact__icon" width="16" height="12">
+                  <use href="./images/icons.svg#icon-envelope"></use>
+                </svg>
+                info@devstudio.com
+              </a>
+            </li>
+            <li>
+              <a href="tel:380961111111" class="contact__link">
+                <svg class="contact__icon" width="10" height="16">
+                  <use href="images/icons.svg#icon-smartphone"></use>
+                </svg>
+                +38 096 111 11 11</a
               >
             </li>
-            <li>
-              <a href="./portfolio.html" class="nav-header__link">Портфоліо</a>
-            </li>
-            <li>
-              <a href="" class="nav-header__link">Контакти</a>
-            </li>
           </ul>
-        </nav>
-        <!-- Контактні дані Хедер -->
-        <ul class="contact">
-          <li>
-            <a href="emailto:info@devstudio.com" class="contact__link">
-              <svg class="contact__icon" width="16" height="12">
-                <use href="./images/icons.svg#icon-envelope"></use>
-              </svg>
-              info@devstudio.com
-            </a>
-          </li>
-          <li>
-            <a href="tel:380961111111" class="contact__link">
-              <svg class="contact__icon" width="10" height="16">
-                <use href="images/icons.svg#icon-smartphone"></use>
-              </svg>
-              +38 096 111 11 11</a
-            >
-          </li>
-        </ul>
+        </div>
       </div>
     </header>
     <main>
@@ -514,67 +521,44 @@
     </footer>
     <!-- Бекдроп -->
     <div data-modal class="backdrop is-hidden">
-      <!-- backdrop is-hidden -->
       <div class="backdrop__container">
-        <!-- backdrop-modal -->
         <button data-modal-close class="backdrop__button" type="button">
-          <!-- backdrop-button -->
           <svg class="backdrop__svg">
-            <!-- backdrop-svg -->
             <use href="./images/icons.svg#icon-vector"></use>
           </svg>
         </button>
         <form class="form">
-          <!-- form-modal -->
           <b class="form__text">Залиште свої дані, ми вам передзвонимо</b>
           <div class="form__container">
-            <!-- form-modal-div -->
             <label class="form__label" for="name">Ім'я</label>
-            <!-- form-modal-label -->
             <div class="form__box box">
-              <!-- form-modal-field -->
-              <!-- form-modal-input -->
               <input class="box__field" type="text" name="name" id="name" />
-              <!-- form-modal-svg -->
               <svg class="box__icon" width="18" height="18">
                 <use href="./images/icons.svg#icon-name"></use>
               </svg>
             </div>
           </div>
           <div class="form__container">
-            <!-- form-modal-div -->
-            <!-- form-modal-label -->
             <label class="form__label" for="tel">Телефон</label>
             <div class="form__box box">
-              <!-- form-modal-field -->
-              <!-- form-modal-input -->
               <input class="box__field" type="tel" name="tel" id="tel" />
               <svg class="box__icon" width="18" height="18">
-                <!-- form-modal-svg -->
                 <use href="./images/icons.svg#icon-tel"></use>
               </svg>
             </div>
           </div>
 
           <div class="form__container">
-            <!-- form-modal-div -->
             <label class="form__label" for="mail">Пошта</label>
-            <!-- form-modal-label -->
             <div class="form__box box">
-              <!-- form-modal-field -->
-              <!-- form-modal-input -->
               <input class="box__field" type="email" name="email" id="mail" />
               <svg class="box__icon" width="18" height="18">
-                <!-- form-modal-svg -->
                 <use href="./images/icons.svg#icon-email"></use>
               </svg>
             </div>
           </div>
           <div class="texteria__container texteria">
-            <!-- form-modal-div -->
             <label class="texteria__label" for="comment">Коментар</label>
-            <!-- form-modal-label -->
-            <!-- form-modal-textarea -->
             <textarea
               class="texteria__field texteria__field--placeholder"
               name="comment"
@@ -584,18 +568,14 @@
           </div>
           <div>
             <label class="checkbox__label">
-              <!-- form-modal-policy -->
               <input class="checkbox__field" type="checkbox" name="policy" />
-              <!-- checkbox -->
               <svg class="checkbox__icon" width="16" height="15">
-                <!-- form-svg -->
                 <use href="./images/icons.svg#icon-check"></use>
               </svg>
               Погоджуюся з розсилкою та приймаю
               <a class="checkbox__link" href="#">Умови договору</a>
             </label>
             <button class="checkbox__button" type="submit">Відправити</button>
-            <!-- form-modal-button -->
           </div>
         </form>
       </div>

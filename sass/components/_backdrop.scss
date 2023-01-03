@@ -1,11 +1,13 @@
 .backdrop {
-  // position: fixed;
-  // top: 0;
-  // left: 0;
-  // width: 100%;
-  // height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
 
   background-color: $color-bacground-backdrop;
+
+  overflow-y: scroll;
 }
 
 .is-hidden {
@@ -17,12 +19,9 @@
 }
 
 .backdrop__container {
-  // position: absolute;
-  // top: 50%;
-  // left: 50%;
-
-  // width: 528px;
-  // height: 581px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
 
   opacity: 1;
 
@@ -38,12 +37,21 @@
     transform: translate(-50%, -50%) scale(0);
     opacity: 0;
   }
+  @media screen and (max-width: ($desktop-width1200 - 1px)) {
+    width: 450px;
+    height: 609px;
+  }
+
+  @media screen and (min-width: $desktop-width1200) {
+    width: 528px;
+    height: 581px;
+  }
 }
 
 .backdrop__button {
-  // position: absolute;
-  // top: 8px;
-  // right: 8px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
 
   width: 30px;
   height: 30px;
@@ -56,8 +64,8 @@
 }
 
 .backdrop__svg {
-  // height: 11px;
-  // width: 11px;
+  height: 11px;
+  width: 11px;
 
   transform: fill 250ms $transition-timing-function-all-hover-focus;
 

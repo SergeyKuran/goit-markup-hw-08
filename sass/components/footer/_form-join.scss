@@ -24,12 +24,12 @@
   border-radius: 50%;
   background-color: $color-background-socials-footer;
 
-  // transform: background-color 250ms $transition-timing-function-all-hover-focus;
+  transform: background-color 250ms $transition-timing-function-all-hover-focus;
 
-  // &:hover,
-  // &:focus {
-  //   background-color: $color-accent;
-  // }
+  &:hover,
+  &:focus {
+    background-color: $color-accent;
+  }
 }
 
 .form-join__icon {
