@@ -1,12 +1,15 @@
 .section-mobile--hidden {
-  @media screen and (max-width: ($tablet-width768 - 1px)) {
-    display: none;
+  display: none;
+  @media screen and (min-width: $desktop-width1200) {
+    display: block;
+
+    padding-top: 0;
   }
 }
 
 .specifics {
-  // display: flex;
-  // flex-direction: column;
+  display: flex;
+  flex-direction: column;
 }
 
 .specifics__title {
@@ -20,8 +23,8 @@
 }
 
 .specifics__group {
-  // display: flex;
-  // gap: 30px;
+  display: flex;
+  gap: 30px;
 }
 
 .specifics__picture {

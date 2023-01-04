@@ -47,11 +47,17 @@
 }
 
 .checkbox__button {
-  min-width: 200px;
-  min-height: 50px;
+  max-width: 200px;
+  max-height: 50px;
+
+  padding: 10px 52px;
+
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
+
+  font-weight: 700;
+  line-height: 1.8;
 
   color: $color-backgroud-header;
   background-color: $color-accent;

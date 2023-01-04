@@ -1,18 +1,25 @@
 .contact {
-  @media screen and (max-width: $tablet-width768) {
+  margin-left: auto;
+  @media screen and (max-width: ($tablet-width768 - 1px)) {
     display: none;
   }
+
+  @media screen and (min-width: $desktop-width1200) {
+    display: flex;
+    gap: 30px;
+  }
 }
-
+.contact > li {
+  @media screen and (min-width: $tablet-width768) and (max-width: ($desktop-width1200 - 1px)) {
+    margin-bottom: 10px;
+  }
+}
 .contact__link {
-  // display: flex;
-  // align-items: center;
-  // gap: 10px;
-  // padding: auto;
-
+  display: flex;
+  align-items: center;
   font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.02em;
   text-decoration: none;
   text-align: center;
@@ -24,9 +31,15 @@
   &:focus {
     color: $color-accent;
   }
+
+  @media screen and (min-width: $desktop-width1200) {
+    font-size: 14px;
+    line-height: 1.14;
+  }
 }
 
 .contact__icon {
+  margin-right: 8px;
   fill: $color-text-secondary;
 
   transition: fill 250ms $transition-timing-function-all-hover-focus;
@@ -34,5 +47,21 @@
   .contact__link:hover > &,
   .contact__link:focus > & {
     fill: $color-accent;
+  }
+
+  @media screen and (min-width: $tablet-width768) and (max-width: ($desktop-width1200 - 1px)) {
+    & [href="./images/icons.svg#icon-envelope"] {
+      max-width: 14px;
+      max-height: 10px;
+    }
+
+    & [href="./images/icons.svg#icon-smartphone"] {
+      max-width: 10px;
+      max-height: 14px;
+    }
+  }
+
+  @media screen and (min-width: $desktop-width1200) {
+    margin-right: 10px;
   }
 }

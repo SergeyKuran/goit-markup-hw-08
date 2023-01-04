@@ -1,9 +1,12 @@
 .menu-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
 
-  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+  width: 100vw;
   height: 100vh;
   padding: 48px 40px;
 
@@ -60,6 +63,9 @@
   & .menu-toggle__icon-close:focus {
     fill: $color-accent;
   }
+  @media screen and (min-width: $tablet-width768) {
+    display: none;
+  }
 }
 
 .mobile-menu {
@@ -69,9 +75,17 @@
   font-weight: 500;
   line-height: 1.17;
 
+  transition: color 250ms $transition-timing-function-all-hover-focus;
+
+  & > li:hover,
+  & > li:focus {
+    color: $color-accent;
+  }
+
   & li {
     margin-bottom: 32px;
   }
+
   @media screen and (max-width: ($mobile-width320 - 1px)) {
     font-size: 20px;
   }

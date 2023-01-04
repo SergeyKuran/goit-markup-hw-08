@@ -4,9 +4,13 @@
   }
 }
 .nav-header__items {
-  // display: flex;
-  // gap: 50px;
-  // margin-left: 91px;
+  display: flex;
+  gap: 50px;
+  margin-left: 87px;
+
+  @media screen and (min-width: $desktop-width1200) {
+    margin-left: 91px;
+  }
 }
 
 .nav-header__link {
@@ -34,10 +38,10 @@
 
 .nav-header__link--current-page::after {
   content: "";
-  // display: block;
-  // position: absolute;
-  // left: 0;
-  // bottom: 0;
+  display: block;
+  position: absolute;
+  left: 0;
+  bottom: 0;
 
   width: 100%;
   height: 4px;

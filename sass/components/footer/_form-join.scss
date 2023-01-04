@@ -28,6 +28,7 @@
 
   &:hover,
   &:focus {
+    color: $color-text-hero;
     background-color: $color-accent;
   }
 }

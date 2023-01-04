@@ -9,6 +9,8 @@
 }
 
 .social-networks__link {
+  @include flex;
+
   padding: 12px;
 
   color: $color-social-link;

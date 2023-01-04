@@ -1,11 +1,13 @@
 .form-mailing {
   @include flex;
-  flex-direction: column;
-}
+  @media screen and (max-width: ($desktop-width1200 - 1px)) {
+    flex-direction: column;
+    margin: 0 auto;
+  }
 
-.form-mailing__container {
-  // display: flex;
-  // flex-direction: column;
+  @media screen and (min-width: $desktop-width1200) {
+    align-items: flex-end;
+  }
 }
 
 .form-mailing__title {
@@ -21,7 +23,9 @@
 }
 
 .form-mailing__input {
-  margin-bottom: 20px;
+  width: 100vw;
+
+  padding: 16px 15px;
 
   color: $color-backgroud-header;
   background-color: $color-backgroud-footer;
@@ -38,12 +42,16 @@
     border-color: $color-accent;
   }
 
-  @media screen and (max-width: ($tablet-width768 - 1px)) {
+  @media screen and (max-width: ($desktop-width1200 - 1px)) {
     max-width: 450px;
-    max-height: 50px;
-    width: 100vw;
 
-    padding: 16px 15px;
+    margin-bottom: 20px;
+  }
+
+  @media screen and (min-width: $desktop-width1200) {
+    max-width: 358px;
+
+    margin-right: 12px;
   }
 }
 
@@ -51,8 +59,8 @@
   @include flex;
   padding: 10px 28px;
 
-  //   min-width: 200px;
-  //   height: 50px;
+  max-width: 200px;
+  max-height: 50px;
 
   font-weight: 700;
   font-size: 16px;

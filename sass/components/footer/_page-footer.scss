@@ -4,12 +4,38 @@
   text-align: center;
 
   background-color: $color-backgroud-footer;
+
+  @media screen and (min-width: $desktop-width1200) {
+    padding-bottom: 0;
+  }
+}
+
+.container--flex-footer {
+  @media screen and (min-width: $desktop-width1200) {
+    align-items: baseline;
+    text-align: left;
+  }
+}
+
+.page-footer__box {
+  @media screen and (min-width: $tablet-width768) {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  @media screen and (min-width: $desktop-width1200) {
+    align-items: baseline;
+    gap: 70px;
+  }
 }
 
 .logo__page-footer--margin-bottom {
   display: inline-block;
 
   margin-bottom: 20px;
+
+  color: $color-logo-footer;
 }
 
 .address__box {
