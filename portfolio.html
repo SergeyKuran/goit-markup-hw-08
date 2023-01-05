@@ -24,7 +24,7 @@
   <body>
     <header>
       <div class="page-header">
-        <div class="container container--flex">
+        <div class="container container--flex-header">
           <div class="page-header__box">
             <!-- Лого -->
             <a href="/" class="logo"
@@ -48,12 +48,14 @@
           <nav class="nav-header">
             <ul class="nav-header__items">
               <li>
-                <a href="./index.html" class="nav-header__link">Студія</a>
+                <a
+                  href="./index.html"
+                  class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
+                  >Студія</a
+                >
               </li>
               <li>
-                <a
-                  href="./portfolio.html"
-                  class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
+                <a href="./portfolio.html" class="nav-header__link"
                   >Портфоліо</a
                 >
               </li>
@@ -123,13 +125,9 @@
       <section>
         <div class="container filter-buttons">
           <h1 class="filter-buttons__title">Портфоліо</h1>
-          <!-- title-hidden -->
           <ul class="filter-buttons__item">
-            <!-- buttons list -->
             <li class="filter-buttons__items">
-              <!-- item-button -->
               <button type="button" class="filter-buttons__button">Усі</button>
-              <!-- button -->
             </li>
             <li class="filter-buttons__items">
               <button type="button" class="filter-buttons__button">
@@ -153,18 +151,9 @@
             </li>
           </ul>
           <ul class="portfolio">
-            <!-- list container-portfolio -->
             <li class="portfolio__card">
-              <!-- picture -->
               <div class="card__container">
-                <!-- picture-thumb -->
-                <!-- picture-pic -->
-                <img
-                  src="./images/portfolio/img-6-2.jpg"
-                  alt="Ноутбук"
-                  width="370"
-                />
-                <!-- picture-text -->
+                <img src="./images/portfolio/img-6-2.jpg" alt="Ноутбук" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -172,20 +161,13 @@
                 </p>
               </div>
               <div class="card__box">
-                <!-- text-div -->
                 <h2 class="box__title">Технокряк</h2>
-                <!-- title-portfolio -->
                 <p class="box__text">Веб-сайт</p>
-                <!-- text-portfolio -->
               </div>
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-7-2.jpg"
-                  alt="Баскетболісти"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-7-2.jpg" alt="Баскетболісти" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -199,11 +181,7 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-8-2.jpg"
-                  alt="Логотип"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-8-2.jpg" alt="Логотип" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -217,11 +195,7 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-9-2.jpg"
-                  alt="Наушники"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-9-2.jpg" alt="Наушники" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -235,11 +209,7 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-10-2.jpg"
-                  alt="Коробки"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-10-2.jpg" alt="Коробки" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -253,11 +223,7 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-11-2.jpg"
-                  alt="Монітор"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-11-2.jpg" alt="Монітор" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -271,11 +237,7 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-12-2.jpg"
-                  alt="Книга"
-                  width="370"
-                />
+                <img src="./images/portfolio/img-12-2.jpg" alt="Книга" />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -292,7 +254,6 @@
                 <img
                   src="./images/portfolio/img-13-2.jpg"
                   alt="Рекламна бірка"
-                  width="370"
                 />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -310,7 +271,6 @@
                 <img
                   src="./images/portfolio/img-14-2.jpg"
                   alt="Друк на клавіатурі"
-                  width="370"
                 />
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -329,7 +289,7 @@
     </main>
     <!-- Футер -->
     <footer class="page-footer">
-      <div class="container">
+      <div class="container container--flex-footer">
         <div class="page-footer__box">
           <div class="address__box">
             <!-- Лого -->
@@ -410,5 +370,12 @@
         </form>
       </div>
     </footer>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile-menu.js"></script>
   </body>
 </html>

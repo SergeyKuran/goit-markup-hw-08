@@ -12,6 +12,7 @@
 
 .container--flex-footer {
   @media screen and (min-width: $desktop-width1200) {
+    display: flex;
     align-items: baseline;
     text-align: left;
   }
@@ -35,7 +36,11 @@
 
   margin-bottom: 20px;
 
-  color: $color-logo-footer;
+  color: $color-accent;
+
+  & .logo__text {
+    color: $color-logo-footer;
+  }
 }
 
 .address__box {

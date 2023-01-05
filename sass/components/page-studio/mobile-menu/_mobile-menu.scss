@@ -57,12 +57,13 @@
 
   transition: fill 250ms $transition-timing-function-all-hover-focus;
 
-  & .menu-toggle__icon-menu:hover,
-  & .menu-toggle__icon-menu:focus,
-  & .menu-toggle__icon-close:hover,
-  & .menu-toggle__icon-close:focus {
+  & svg:hover,
+  & svg:focus,
+  & svg:hover,
+  & svg:focus {
     fill: $color-accent;
   }
+
   @media screen and (min-width: $tablet-width768) {
     display: none;
   }

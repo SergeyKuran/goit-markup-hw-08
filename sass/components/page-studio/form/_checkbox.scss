@@ -9,6 +9,10 @@
   letter-spacing: 0.03em;
 
   color: $color-text-secondary;
+
+  @media screen and (min-width: $desktop-width1200) {
+    font-size: 14px;
+  }
 }
 
 .checkbox__field {

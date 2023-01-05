@@ -57,9 +57,9 @@
 
   width: 30px;
   height: 30px;
+  background-color: transparent;
+  border: 1px solid rgba(0, 0, 0, 0.1);
 
-  background-color: $color-backgroud-header;
-  border-color: $color-border-button-modal;
   border-radius: 50%;
 
   cursor: pointer;
