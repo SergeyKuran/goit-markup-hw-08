@@ -3,7 +3,7 @@ body {
   color: $color-text-primary;
   font-family: $font-dominant;
 
-  & .modal-open {
+  &.modal-open {
     overflow: hidden;
   }
 }
