@@ -7,7 +7,7 @@
 
   background-color: $color-bacground-backdrop;
 
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .is-hidden {
@@ -23,20 +23,17 @@
   top: 50%;
   left: 50%;
 
-  opacity: 1;
-
   transform: translate(-50%, -50%) scale(1);
 
-  transition: transform 500ms $transition-timing-function-all-hover-focus,
-    opacity 250ms $transition-timing-function-all-hover-focus;
+  transition: transform 500ms $transition-timing-function-all-hover-focus;
 
   background-color: $color-backgroud-header;
   border-radius: 4px;
 
   .is-hidden:focus & {
     transform: translate(-50%, -50%) scale(0);
-    opacity: 0;
   }
+
   @media screen and (max-width: ($desktop-width1200 - 1px)) {
     max-width: 450px;
     width: 100%;
@@ -45,8 +42,9 @@
 
   @media screen and (min-width: $desktop-width1200) {
     max-width: 528px;
-    width: 528px;
+    width: 100%;
     max-height: 581px;
+    height: 100%;
   }
 }
 

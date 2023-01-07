@@ -2,6 +2,10 @@ body {
   background-color: $color-backgroud-header;
   color: $color-text-primary;
   font-family: $font-dominant;
+
+  & .modal-open {
+    overflow: hidden;
+  }
 }
 
 h1,

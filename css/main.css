@@ -3,6 +3,9 @@ body {
   color: #212121;
   font-family: Roboto, sans-serif;
 }
+body .modal-open {
+  overflow: hidden;
+}
 
 h1,
 h2,
@@ -425,23 +428,41 @@ button {
 
 .hero {
   max-width: 1600px;
+  margin: 0 auto;
   padding: 118px 60px;
   text-transform: uppercase;
   background-color: #2f303a;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("../images/hero/img-hero.jpg");
-  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/img-hero.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.4)), to(rgba(47, 48, 58, 0.4))), url("/images/studio/hero/mobile/hero.jpg");
+  background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("/images/studio/hero/mobile/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
+@media screen and (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/studio/hero/mobile/hero2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 768px), screen and (min-resolution: 192dpi) and (min-width: 768px), screen and (min-resolution: 2dppx) and (min-width: 768px) {
+  .hero {
+    background-image: url(/images/studio/hero/tablet/hero2x.jpg);
+  }
+}
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (-webkit-min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
+  .hero {
+    background-image: url(/images/studio/hero/desktop/hero2x.jpg);
+  }
+}
 @media screen and (min-width: 768px) {
   .hero {
     padding: 118px 204px;
+    background-image: url(/images/studio/hero/tablet/hero.jpg);
   }
 }
 @media screen and (min-width: 1200px) {
   .hero {
     padding: 200px 0;
+    background-image: url(/images/studio/hero/desktop/hero.jpg);
   }
 }
 
@@ -688,6 +709,11 @@ button {
   .card-team__item {
     margin: 15px;
     width: calc((100% - 60px) / 2);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .card-team__item {
+    max-width: 270px;
   }
 }
 
@@ -1128,6 +1154,11 @@ button {
 }
 
 .portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   margin: -15px;
 }
 
@@ -1142,6 +1173,11 @@ button {
 .portfolio__card:hover, .portfolio__card:focus {
   -webkit-box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
           box-shadow: 0px 4px 2px rgba(0, 0, 0, 0.25);
+}
+@media screen and (min-width: 768px) {
+  .portfolio__card {
+    width: calc((100% - 30px) / 1);
+  }
 }
 @media screen and (min-width: 768px) {
   .portfolio__card {
@@ -1189,7 +1225,6 @@ button {
 @media screen and (min-width: 1200px) {
   .card__text {
     padding: 63px 24px;
-    line-height: 1.33;
   }
 }
 
@@ -1220,7 +1255,7 @@ button {
   width: 100vw;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.2);
-  overflow-y: scroll;
+  overflow-y: auto;
 }
 
 .is-hidden {
@@ -1233,20 +1268,18 @@ button {
   position: absolute;
   top: 50%;
   left: 50%;
-  opacity: 1;
   -webkit-transform: translate(-50%, -50%) scale(1);
           transform: translate(-50%, -50%) scale(1);
-  -webkit-transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
-  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  -webkit-transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform 500ms cubic-bezier(0.4, 0, 0.2, 1), -webkit-transform 500ms cubic-bezier(0.4, 0, 0.2, 1);
   background-color: #ffffff;
   border-radius: 4px;
 }
 .is-hidden:focus .backdrop__container {
   -webkit-transform: translate(-50%, -50%) scale(0);
           transform: translate(-50%, -50%) scale(0);
-  opacity: 0;
 }
 @media screen and (max-width: 1199px) {
   .backdrop__container {
@@ -1258,8 +1291,9 @@ button {
 @media screen and (min-width: 1200px) {
   .backdrop__container {
     max-width: 528px;
-    width: 528px;
+    width: 100%;
     max-height: 581px;
+    height: 100%;
   }
 }
 

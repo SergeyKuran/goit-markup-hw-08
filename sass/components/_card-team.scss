@@ -33,6 +33,10 @@
     margin: 15px;
     width: calc((100% - 4 * 15px) / 2);
   }
+
+  @media screen and (min-width: $desktop-width1200) {
+    max-width: 270px;
+  }
 }
 
 .card-team__picture {

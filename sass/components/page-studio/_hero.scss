@@ -18,7 +18,7 @@
 
 .hero {
   max-width: 1600px;
-
+  margin: 0 auto;
   padding: 118px 60px;
 
   text-transform: uppercase;
@@ -29,17 +29,35 @@
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/hero/img-hero.jpg");
+    url("/images/studio/hero/mobile/hero.jpg");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(/images/studio/hero/mobile/hero2x.jpg);
+
+    @media screen and (min-width: $tablet-width768) {
+      background-image: url(/images/studio/hero/tablet/hero2x.jpg);
+    }
+
+    @media screen and (min-width: $desktop-width1200) {
+      background-image: url(/images/studio/hero/desktop/hero2x.jpg);
+    }
+  }
+
   @media screen and (min-width: $tablet-width768) {
     padding: 118px 204px;
+
+    background-image: url(/images/studio/hero/tablet/hero.jpg);
   }
 
   @media screen and (min-width: $desktop-width1200) {
     padding: 200px 0;
+
+    background-image: url(/images/studio/hero/desktop/hero.jpg);
   }
 }
 

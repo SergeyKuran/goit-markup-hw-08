@@ -192,31 +192,58 @@
           <ul class="specifics__group">
             <li>
               <div class="specifics__picture">
-                <img
-                  src="./images/box1-2-2.jpg"
-                  alt="Друк на клавіатурі"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/studio/specifics/desktop/specifics.jpg   1x,
+                      /images/studio/specifics/desktop/specifics2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="/images/studio/specifics/desktop/specifics.jpg"
+                    alt="Друк на клавіатурі"
+                    width="370"
+                  />
+                </picture>
                 <p class="specifics__text">Десктопні додатки</p>
               </div>
             </li>
             <li>
               <div class="specifics__picture">
-                <img
-                  src="./images/box2-2-2.jpg"
-                  alt="Вибір макета на ноуті"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/studio/specifics/desktop/specifics2.jpg    1x,
+                      /images/studio/specifics/desktop/specifics2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="/images/studio/specifics/desktop/specifics2.jpg"
+                    alt="Вибір макета на ноуті"
+                    width="370"
+                  />
+                </picture>
                 <p class="specifics__text">Мобільні додатки</p>
               </div>
             </li>
             <li>
               <div class="specifics__picture">
-                <img
-                  src="./images/box3-2-2.jpg"
-                  alt="Кольорова палітра"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/studio/specifics/desktop/specifics3.jpg    1x,
+                      /images/studio/specifics/desktop/specifics3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <img
+                    src="/images/studio/specifics/desktop/specifics3.jpg"
+                    alt="Кольорова палітра"
+                    width="370"
+                  />
+                </picture>
                 <p class="specifics__text">Дизайнерські рішення</p>
               </div>
             </li>
@@ -228,11 +255,34 @@
           <h2 class="card-title">Наша команда</h2>
           <ul class="card-team">
             <li class="card-team__item">
-              <img
-                class="card-team__picture"
-                alt="Product Designer"
-                src="./images/img-5.jpg"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/studio/card-team/mobile/card-team.jpg   1x,
+                    /images/studio/card-team/mobile/card-team2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/tablet/card-team.jpg   1x,
+                    /images/studio/card-team/tablet/card-team2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/desktop/card-team.jpg   1x,
+                    /images/studio/card-team/desktop/card-team2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  src="./images/studio/card-team/mobile/card-team.jpg"
+                  alt="Product Designer"
+                  class="card-team__picture"
+                />
+              </picture>
               <h3 class="card-team__title">Ігор Дем'яненко</h3>
               <p class="card-team__text">Product Designer</p>
               <!-- Соціальні мережі іконки -->
@@ -268,11 +318,38 @@
               </ul>
             </li>
             <li class="card-team__item">
-              <img
-                class="card-team__picture"
-                alt="Frontend Developer"
-                src="./images/img-2-2.jpg"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/studio/card-team/mobile/card-team2.jpg    1x,
+                    /images/studio/card-team/mobile/card-team2-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/tablet/card-team2.jpg    1x,
+                    /images/studio/card-team/tablet/card-team2-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/desktop/card-team2.jpg    1x,
+                    /images/studio/card-team/desktop/card-team2-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="
+                    /images/studio/card-team/mobile/card-team2.jpg    1x,
+                    /images/studio/card-team/mobile/card-team2-2x.jpg 2x
+                  "
+                  src="/images/studio/card-team/mobile/card-team2.jpg"
+                  alt="Frontend Developer"
+                  class="card-team__picture"
+                />
+              </picture>
               <h3 class="card-team__title">Ольга Рєпіна</h3>
               <p class="card-team__text">Frontend Developer</p>
               <!-- Соціальні мережі іконки -->
@@ -308,11 +385,38 @@
               </ul>
             </li>
             <li class="card-team__item">
-              <img
-                class="card-team__picture"
-                src="./images/img-3-2.jpg"
-                alt="Marketing"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/studio/card-team/mobile/card-team3.jpg    1x,
+                    /images/studio/card-team/mobile/card-team3-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/tablet/card-team3.jpg    1x,
+                    /images/studio/card-team/tablet/card-team3-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/desktop/card-team3.jpg    1x,
+                    /images/studio/card-team/desktop/card-team3-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="
+                    /images/studio/card-team/mobile/card-team3.jpg    1x,
+                    /images/studio/card-team/mobile/card-team3-2x.jpg 2x
+                  "
+                  src="/images/studio/card-team/mobile/card-team3.jpg"
+                  alt="Marketing"
+                  class="card-team__picture"
+                />
+              </picture>
               <h3 class="card-team__title">Микола Тарасов</h3>
               <p class="card-team__text">Marketing</p>
               <!-- Соціальні мережі іконки -->
@@ -348,11 +452,38 @@
               </ul>
             </li>
             <li class="card-team__item">
-              <img
-                class="card-team__picture"
-                src="./images/img-4-2.jpg"
-                alt="UI Designer"
-              />
+              <picture>
+                <source
+                  srcset="
+                    /images/studio/card-team/mobile/card-team4.jpg    1x,
+                    /images/studio/card-team/mobile/card-team4-2x.jpg 2x
+                  "
+                  media="(max-width: 767px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/tablet/card-team4.jpg    1x,
+                    /images/studio/card-team/tablet/card-team4-2x.jpg 2x
+                  "
+                  media="(min-width: 768px)"
+                />
+                <source
+                  srcset="
+                    /images/studio/card-team/desktop/card-team4.jpg    1x,
+                    /images/studio/card-team/desktop/card-team4-2x.jpg 2x
+                  "
+                  media="(min-width: 1200px)"
+                />
+                <img
+                  srcset="
+                    /images/studio/card-team/mobile/card-team4.jpg    1x,
+                    /images/studio/card-team/mobile/card-team4-2x.jpg 2x
+                  "
+                  src="/images/studio/card-team/mobile/card-team4.jpg"
+                  alt="UI Designer"
+                  class="card-team__picture"
+                />
+              </picture>
               <h3 class="card-team__title">Михайло Єрмаков</h3>
               <p class="card-team__text">UI Designer</p>
               <!-- Соціальні мережі іконки -->

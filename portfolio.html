@@ -48,14 +48,12 @@
           <nav class="nav-header">
             <ul class="nav-header__items">
               <li>
-                <a
-                  href="./index.html"
-                  class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
-                  >Студія</a
-                >
+                <a href="./index.html" class="nav-header__link">Студія</a>
               </li>
               <li>
-                <a href="./portfolio.html" class="nav-header__link"
+                <a
+                  href="./portfolio.html"
+                  class="nav-header__link nav-header__link--current-page nav-header__link--current-page::after"
                   >Портфоліо</a
                 >
               </li>
@@ -153,7 +151,34 @@
           <ul class="portfolio">
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-6-2.jpg" alt="Ноутбук" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio.jpg   1x,
+                      /images/portfolio/desktop/portfolio2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio.jpg   1x,
+                      /images/portfolio/tablet/portfolio2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio.jpg   1x,
+                      /images/portfolio/mobile/portfolio2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio.jpg"
+                    alt="Ноутбук"
+                  />
+                </picture>
+
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -167,7 +192,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-7-2.jpg" alt="Баскетболісти" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio2.jpg    1x,
+                      /images/portfolio/desktop/portfolio2-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio2.jpg    1x,
+                      /images/portfolio/tablet/portfolio2-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio2.jpg    1x,
+                      /images/portfolio/mobile/portfolio2-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio2.jpg"
+                    alt="Баскетболісти"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -181,7 +232,34 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-8-2.jpg" alt="Логотип" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio3.jpg    1x,
+                      /images/portfolio/desktop/portfolio3-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio3.jpg    1x,
+                      /images/portfolio/tablet/portfolio3-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio3.jpg    1x,
+                      /images/portfolio/mobile/portfolio3-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio3.jpg"
+                    alt="Логотип"
+                  />
+                </picture>
+
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -195,7 +273,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-9-2.jpg" alt="Наушники" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio4.jpg    1x,
+                      /images/portfolio/desktop/portfolio4-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio4.jpg    1x,
+                      /images/portfolio/tablet/portfolio4-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio4.jpg    1x,
+                      /images/portfolio/mobile/portfolio4-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio4.jpg"
+                    alt="Наушники"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -209,7 +313,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-10-2.jpg" alt="Коробки" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio5.jpg    1x,
+                      /images/portfolio/desktop/portfolio5-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio5.jpg    1x,
+                      /images/portfolio/tablet/portfolio5-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio5.jpg    1x,
+                      /images/portfolio/mobile/portfolio5-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio5.jpg"
+                    alt="Коробки"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -223,7 +353,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-11-2.jpg" alt="Монітор" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio6.jpg    1x,
+                      /images/portfolio/desktop/portfolio6-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio6.jpg    1x,
+                      /images/portfolio/tablet/portfolio6-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio6.jpg    1x,
+                      /images/portfolio/mobile/portfolio6-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio6.jpg"
+                    alt="Монітор"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -237,7 +393,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img src="./images/portfolio/img-12-2.jpg" alt="Книга" />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio7.jpg    1x,
+                      /images/portfolio/desktop/portfolio7-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio7.jpg    1x,
+                      /images/portfolio/tablet/portfolio7-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio7.jpg    1x,
+                      /images/portfolio/mobile/portfolio7-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio7.jpg"
+                    alt="Книга"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -251,10 +433,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-13-2.jpg"
-                  alt="Рекламна бірка"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio8.jpg    1x,
+                      /images/portfolio/desktop/portfolio8-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio8.jpg    1x,
+                      /images/portfolio/tablet/portfolio8-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio8.jpg    1x,
+                      /images/portfolio/mobile/portfolio8-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio8.jpg"
+                    alt="Рекламна бірка"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
@@ -268,10 +473,33 @@
             </li>
             <li class="portfolio__card">
               <div class="card__container">
-                <img
-                  src="./images/portfolio/img-14-2.jpg"
-                  alt="Друк на клавіатурі"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      /images/portfolio/desktop/portfolio9.jpg    1x,
+                      /images/portfolio/desktop/portfolio9-2x.jpg 2x
+                    "
+                    media="(min-width: 1200px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/tablet/portfolio9.jpg    1x,
+                      /images/portfolio/tablet/portfolio9-2x.jpg 2x
+                    "
+                    media="(min-width: 768px)"
+                  />
+                  <source
+                    srcset="
+                      /images/portfolio/mobile/portfolio9.jpg    1x,
+                      /images/portfolio/mobile/portfolio9-2x.jpg 2x
+                    "
+                    media="(max-width: 767px)"
+                  />
+                  <img
+                    src="/images/portfolio/mobile/portfolio9.jpg"
+                    alt="Друк на клавіатурі"
+                  />
+                </picture>
                 <p class="card__text">
                   Ресурс пропонує комплексні пропозиції з різним рівнем
                   функціоналу та сервісів. Все це дозволить відвідувачу отримати
