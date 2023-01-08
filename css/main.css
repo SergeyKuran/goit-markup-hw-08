@@ -39,6 +39,11 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 320px) {
+  .container {
+    width: 320px;
+  }
+}
 @media screen and (min-width: 480px) {
   .container {
     width: 480px;
@@ -427,6 +432,8 @@ button {
 }
 
 .hero {
+  max-width: 1600px;
+  margin: 0 auto;
   padding: 118px 60px;
   text-transform: uppercase;
   background-color: #2f303a;
