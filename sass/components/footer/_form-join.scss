@@ -37,8 +37,8 @@
   fill: currentColor;
   transform: fill 250ms $transition-timing-function-all-hover-focus;
 
-  // .form-join__link:hover &,
-  // .form-join__link:focus & {
-  //   fill: $color-text-hero;
-  // }
+  .form-join__link:hover &,
+  .form-join__link:focus & {
+    fill: $color-text-hero;
+  }
 }

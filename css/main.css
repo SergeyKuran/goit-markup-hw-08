@@ -1004,6 +1004,9 @@ button {
   -webkit-transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
           transform: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+.form-join__link:hover .form-join__icon, .form-join__link:focus .form-join__icon {
+  fill: #ffffff;
+}
 
 .form-mailing {
   display: -webkit-box;
@@ -1046,6 +1049,7 @@ button {
 
 .form-mailing__input {
   width: 100vw;
+  max-width: 320px;
   max-height: 50px;
   padding: 16px 15px;
   color: #ffffff;
@@ -1059,9 +1063,13 @@ button {
 .form-mailing__input:hover, .form-mailing__input:focus {
   border-color: #2196f3;
 }
-@media screen and (max-width: 1199px) {
+@media screen and (min-width: 480px) {
   .form-mailing__input {
     max-width: 450px;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .form-mailing__input {
     margin-bottom: 20px;
   }
 }

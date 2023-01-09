@@ -1,8 +1,3 @@
-.filter-buttons {
-  // @include flex;
-  // flex-direction: column;
-}
-
 .filter-buttons__title {
   @extend %visually-hidden;
 }
