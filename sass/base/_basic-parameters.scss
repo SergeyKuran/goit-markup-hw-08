@@ -40,10 +40,6 @@ img {
   padding-right: 15px;
   margin: 0 auto;
 
-  @media screen and (min-width: $mobile-width320) {
-    width: $mobile-width320;
-  }
-
   @media screen and (min-width: $mobile-width480) {
     width: $mobile-width480;
   }
